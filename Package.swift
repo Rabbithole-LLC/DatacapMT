@@ -21,8 +21,6 @@ let package = Package(
         .target(
             name: "DatacapLibrary",
             dependencies: []),
-        .testTarget(
-            name: "DatacapLibraryTests",
-            dependencies: ["DatacapLibrary"]),
+        .executableTarget(name: "DatacapMobileToken", path: "DatacapMobileToken.framework")
     ]
 )
